@@ -16,4 +16,6 @@ let restaurant = getRandomValue(restaurantSelection);
 let transportation = getRandomValue(transportationSelection);
 let entertainment = getRandomValue(entertainmentSelection);
 
+let finalSelectionArray = [];
+
 console.log("Ok, you trip has been planned! You will be going to " + destination + ". Lunch will be provided by: " + restaurant + ". We will be getting to " + entertainment + " via " + transportation + ".");
