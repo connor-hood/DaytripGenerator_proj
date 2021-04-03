@@ -12,13 +12,22 @@ function getRandomValue(selectionArray){
 
 getRandomValue(destinationSelection); 
 
-function confirmRandom (randomValue, finalArray){
+let confirmedArrray = [];
+
+function confirmRandom (randomValue, randomValueArray, finalArray){
     let verify = confirm("Please confirm " + randomValue);
+    let nextRandom;
+    let nextRandomVerify;
+    for (let i = 0; i < randomValueArray.length; i++) {
+    }
         if (verify == true){
             finalArray.push(randomValue);
-        } 
+        } else{
+            confirm("Please confirm ")
+        }
 }
 let destination = getRandomValue(destinationSelection);
+confirmRandom(destination, confirmedArrray);
 let restaurant = getRandomValue(restaurantSelection);
 let transportation = getRandomValue(transportationSelection);
 let entertainment = getRandomValue(entertainmentSelection);
